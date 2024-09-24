@@ -1,0 +1,242 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica;
+    background: black;
+    color: #999;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+p{
+    margin: 8px 0;
+}
+img{
+    width: 100%;
+}
+.showcase{
+    width: 100%;
+    height: 93vh;
+    position: relative;
+    background-image: url(images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.showcase::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    background-color: rgb(0,0,0,0.6);
+}
+.showcase-top{
+   position: relative;
+   height: 90px;
+   z-index: 2;
+}
+.showcase-top img{
+    width: 170px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+}
+.showcase-top a{
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translate(-50%, -50%);
+}
+.showcase-content{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 80px ;
+    z-index: 2;
+}
+.showcase-content h1{
+    color: white;
+    font-size: 50px;
+    font-weight: 700;
+    margin: 0 0 20px;
+}
+.showcase-content p{
+    color: white;
+    font-size: 20px;
+    font-weight: 100;
+    text-transform: uppercase;
+    margin: 0 0 20px;
+}
+.tabs{
+    background: #141414;
+    padding-top: 16px;
+    border-bottom: 3px solid #3d3d3d;
+}
+.tabs .container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 220px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.tabs p{
+    font-size: 16px;
+    padding-top: 8px;
+}
+.tabs .container > div{
+    padding: 20px 0;
+}
+.tabs .container > div:hover{
+    color: white;
+    cursor: pointer;
+}
+.tab-border{
+    border-bottom: 4px solid red;
+}
+
+.tab-content{
+    padding: 30px 0;
+    color: white;
+    background: black;
+    /* font-size: 20px; */
+}
+
+#tab-1-content .tab-1-content-inner{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap:15px;
+    justify-content: center;
+    align-items: center;
+}
+.tab-1-content-inner p {
+    padding-bottom: 10px;
+}
+.tab-1-content-inner img{
+    width: 500px;
+}
+
+#tab-2-content .tab-2-content-top{
+    display: grid;
+    grid-template-columns: auto auto ;
+    grid-gap: 170px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#tab-2-content .tab-2-content-bottom{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 30px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.tab-2-content-top a{
+    font-size: 15px;
+}
+.text-center{
+    text-align: center;
+}
+#tab-3-content .text-center a{
+    font-size: 20px;
+    margin-top: 10px;
+}
+table{
+    width: 100%;
+    margin-top: 16px;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+table thead th{
+    text-transform: uppercase;
+    padding: 12px;
+}
+table tbody tr td{
+    color: #999;
+    padding: 12px 18px;
+    text-align: center;
+}   
+table tbody tr td:first-child{
+    text-align: left;
+}
+table tbody tr:nth-child(odd){
+    background: #222;
+}
+.text-dark{
+    color: #999;
+}
+/* Footer */
+footer{
+    max-width: 75%;
+    margin: 16px auto;
+    overflow: auto;
+}
+.footer, .footer a {
+    color: #999;
+    font-size: 14px;
+}
+.footer p {
+    margin-bottom: 24px;
+}
+.footer-cols ul{
+    list-style: none;
+    line-height: 30px;
+}
+.footer .footer-cols{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap:10px;
+}
+
+#tab-1-content,
+#tab-2-content,
+#tab-3-content{
+    display: none;
+}
+.show{
+    display: block !important   ;
+}
+/*container*/
+.container{
+    max-width: 70%;
+    margin: auto;
+    padding: 0 2rem;
+    overflow: hidden;
+}
+
+/*button*/
+.btn{
+    color: white;
+    background-color: red;
+    padding: 6px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 8px;
+    box-shadow: 0 1px 0 black;
+}
+.btn:hover{
+    opacity: 0.7;
+}
+.btn-lg{
+    font-size: 25px;
+    padding: 10px 20px;
+}
+
+.btn-icon{
+    padding-left: 10px;
+}
